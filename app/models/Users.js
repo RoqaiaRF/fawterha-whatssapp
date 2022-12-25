@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
     }
   }, {
     sequelize,
-    modelName: 'Users'
+    modelName: 'users'
   });
   return Users;
 };
