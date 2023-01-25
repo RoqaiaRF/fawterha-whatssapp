@@ -41,5 +41,4 @@ module.exports = (sequelize) => {
     sequelize,
     modelName: 'users'
   });
-  return Users;
 };
