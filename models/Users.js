@@ -14,15 +14,28 @@ module.exports = (sequelize) => {
     phone: {
       type: Sequelize.STRING,
       allowNull: false,
-      unique: true
+      unique: true,
+      validate:{
+        isNumeric:true,
+      }
     },
     tax_number: {
       type: Sequelize.STRING,
-      allowNull: true
+      allowNull: true,
+      validate:{
+        isNumeric:true,
+        min:15,
+        max:15
+      }
     },
     unique_number: {
       type: Sequelize.STRING,
       allowNull: true,
+      validate:{
+        isNumeric:true,
+        min:15,
+        max:15
+      }
     }
   }, {
     sequelize,
